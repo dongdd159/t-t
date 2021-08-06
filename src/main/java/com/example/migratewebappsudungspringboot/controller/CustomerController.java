@@ -22,7 +22,7 @@ public class CustomerController {
     @Autowired
     private ProvinceService provinceService;
 
-    @ModelAttribute("provinces")
+    @ModelAttribute("pro")
     public Iterable<Province> allProvinces() {
         return provinceService.findAll();
     }
@@ -56,5 +56,9 @@ public class CustomerController {
 
     private Page<Customer> search(Optional<String> s, Pageable pageInfo) {
         return customerService.search(s.get(), pageInfo);
+    }
+    @ModelAttribute("")
+    public Iterable<Province> llProvinces() {
+        return provinceService.findAll();
     }
 }
