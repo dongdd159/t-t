@@ -64,4 +64,7 @@ public class CustomerController {
     private Page<Customer> swwwwwwwwwwwwww(Optional<String> s, Pageable pageInfo) {
         return customerService.search(s.get(), pageInfo);
     }
+    private Page<Customer> ddddddddddddddddddddddddd(Optional<String> s, Pageable pageInfo) {
+        return customerService.search1(s.get(), pageInfo);
+    }
 }
