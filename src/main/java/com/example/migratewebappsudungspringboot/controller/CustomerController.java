@@ -61,4 +61,7 @@ public class CustomerController {
     public Iterable<Province> llProvinces() {
         return provinceService.findAll();
     }
+    private Page<Customer> swwwwwwwwwwwwww(Optional<String> s, Pageable pageInfo) {
+        return customerService.search(s.get(), pageInfo);
+    }
 }
